@@ -1,0 +1,24 @@
+site_name: Documentação GranMestre
+site_description: Documentação de arquitetura, regras de negócio e fluxos do Sistema GranMestre Restaurante
+site_url: https://gabrieldearaujobento-oss.github.io/granmestre-doc/
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Arquitetura: arquitetura.md
+  - Regras e Fluxos: regras.md
